@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+body {
+    background-color: #F8F9FC;
+}
+
 blockquote,
 body,
 dd,
@@ -110,6 +114,11 @@ body {
 
 .primary-topbar {
     margin-top: 60px;
+    position: relative;
+}
+
+.primary-topbar__item {
+    list-style: none;
 }
 
 .primary-topbar__list {
@@ -125,7 +134,6 @@ body {
 }
 
 .primary-topbar__item:first-child a {
-    font-family: 'RF Tone';
     font-style: normal;
     font-weight: 900;
     font-size: 24px;
@@ -139,12 +147,11 @@ body {
 }
 
 .primary-topbar__item:last-child a {
-    font-family: 'RF Tone';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -153,6 +160,7 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    list-style: none;
 }
 
 .middle-block {
@@ -160,7 +168,6 @@ body {
 }
 
 .primary-topbar__item a {
-    font-family: 'RF Tone';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -178,6 +185,8 @@ body {
 
 .calc-info {
     margin-bottom: 33px;
+    position: relative;
+    z-index: 50;
 }
 
 .calc-info-wrapper {
@@ -195,7 +204,6 @@ body {
 }
 
 .calc-info-left h1 {
-    font-family: 'RF Tone';
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -209,9 +217,74 @@ body {
 }
 
 .calc-form {
-    border: 1px solid #000;
+    padding: 61px 40px 60px 42px;
+    background-color: #fff;
+    border-radius: 16px;
     width: 562px;
     height: 841px;
+}
+
+.calc-form .cel-kredita p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #808082;
+    margin-bottom: 20px;
+}
+
+.cel-kredita-wrap {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 39px;
+}
+
+.select-car select {
+    color: #040827;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    background: #F3F3F5;
+    border: 1px solid #E4E4E6;
+    border-radius: 8px;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 36px;
+    padding: 0 17px 0 14px;
+    outline: none;
+}
+
+.obshchaya-summa-kredita label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #8C8C8C;
+}
+
+.obshchaya-summa-kredita input {
+    background: #F3F3F5;
+    border: 1px solid #E4E4E6;
+    border-radius: 8px 8px 0px 0px;
+    width: 100%;
+    max-width: 480px;
+    height: 60px;
+    margin-top: 12px;
+    color: #040827;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0 17px 0 14px;
+    outline: none;
+    margin-bottom: 34px;
+}
+
+.cel-kredita-item {
+    margin-right: 43px;
+}
+
+.cel-kredita-item input {
+    margin-right: 10px;
 }
 
 .calc-info-steps {
@@ -221,7 +294,6 @@ body {
 }
 
 .calc-info-steps p {
-    font-family: 'RF Tone';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -316,12 +388,58 @@ body {
     background-image: url("/img/Mask\ group.png");
 }
 
+.pervonachalnyj-vznos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pervonachalnyj-vznos-item label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #8C8C8C;
+    outline: none;
+}
+
+.pervonachalnyj-vznos-item:first-child input {
+    background: #F3F3F5;
+    border: 1px solid #E4E4E6;
+    border-radius: 8px 8px 0px 0px;
+    width: 100%;
+    max-width: 309px;
+    height: 60px;
+    color: #040827;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0 17px 0 14px;
+    outline: none;
+}
+
+.pervonachalnyj-vznos-item:last-child {
+    max-width: 142px;
+}
+
+.pervonachalnyj-vznos-item:last-child select {
+    background: #F3F3F5;
+    border: 1px solid #E4E4E6;
+    border-radius: 8px;
+    width: 100%;
+    height: 60px;
+    color: #040827;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0 17px 0 14px;
+    outline: none;
+}
+
 
 /* адаптив */
 
 @media (min-width: 1251px) {
-    .calc-info::before {
-        display: none;
+    body::before {
         content: '';
         background-image: url("../img/bg-red.png");
         background-size: 100% 100%;
