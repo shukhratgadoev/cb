@@ -666,6 +666,20 @@ body {
     justify-content: center;
 }
 
+.table-row .table-items:nth-child(4),
+.table-row .table-items:nth-child(8),
+.table-row .table-items:nth-child(12),
+.table-row .table-items:nth-child(16) {
+    border-right: none;
+}
+
+.table-row .table-items:nth-child(13),
+.table-row .table-items:nth-child(14),
+.table-row .table-items:nth-child(15),
+.table-row .table-items:nth-child(16) {
+    border-bottom: none;
+}
+
 .table-row .table-items.table-items--white svg path {
     fill: #fff;
 }
