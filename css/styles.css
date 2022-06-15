@@ -112,9 +112,17 @@ body {
     margin: 0 auto;
 }
 
+.wrapper-img-top {
+    background-image: url('/img/bg1-2.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .primary-topbar {
-    margin-top: 60px;
+    padding-top: 60px;
     position: relative;
+    z-index: 22;
 }
 
 .primary-topbar__item {
@@ -530,10 +538,9 @@ body {
 }
 
 .form-btn button {
+    position: relative;
+    z-index: 999;
     margin-bottom: 27px;
-}
-
-.form-btn button {
     width: 480px;
     height: 68px;
     background: #30be9e;
@@ -572,8 +579,12 @@ body {
 }
 
 .rabotaem-nad-podklyucheniem {
-    background: linear-gradient(62.03deg, #257AEF 0.52%, #1E37C2 99.66%);
-    backdrop-filter: blur(121px);
+    background-image: url('/img/bg-blue.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background: linear-gradient(62.03deg, #257AEF 0.52%, #1E37C2 99.66%);
+    backdrop-filter: blur(121px); */
     position: relative;
     padding-top: 114px;
     padding-bottom: 347px;
@@ -642,21 +653,23 @@ body {
 }
 
 .table-row {
-    display: -webkit-box;
+    /* display: -webkit-box;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     margin-right: -10px;
     margin-left: -10px;
 }
 
 .table-row .table-items {
-    -webkit-box-flex: 0;
+    /* -webkit-box-flex: 0;
     -webkit-flex: 0 0 25%;
-    flex: 0 0 25%;
+    flex: 0 0 25%; */
     height: 202px;
-    max-width: 25%;
+    /* max-width: 25%; */
     padding: 0 10px;
     border-right: 1px solid RGB(53, 106, 221);
     border-bottom: 1px solid RGB(53, 106, 221);
@@ -664,6 +677,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.table-row .table-items img {
+    filter: grayscale(1) brightness(1000%);
+}
+
+.table-row .table-items:hover img {
+    filter: inherit;
+}
+
+.table-row .table-items:hover {
+    background-color: #fff;
 }
 
 .table-row .table-items:nth-child(4),
@@ -699,6 +724,7 @@ body {
     border-radius: 128px 0 0 128px;
     width: 100%;
     max-width: 1920px;
+    margin-left: auto;
 }
 
 .prichiny-vybrat-nas-text h2 {
@@ -795,6 +821,10 @@ body {
     justify-content: space-between;
 }
 
+.button-wrap .active img {
+    transform: rotate(90deg);
+}
+
 
 /* .accordion:hover {
     background-color: #ccc;
@@ -819,9 +849,13 @@ body {
 
 /* accordion */
 
-.chasto-zadavaemye-voprosy {
-    background: rgba(248, 249, 252, 0.6);
-    backdrop-filter: blur(68px);
+.chasto-zadavaemye-voprosy-bg {
+    background-image: url('/img/bg-bottom-white.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+    /* background: rgba(248, 249, 252, 0.6);
+    backdrop-filter: blur(68px); */
 }
 
 .napishite-nam {
@@ -847,7 +881,7 @@ body {
     display: flex;
     align-items: center;
     color: #040827;
-    margin-bottom: 10px;
+    margin-bottom: 35px;
 }
 
 .napishite-nam-left h2 img {
@@ -899,8 +933,6 @@ body {
     width: 50%;
 }
 
-.napishite-nam-right-item {}
-
 .napishite-nam-right-item label {
     font-style: normal;
     font-weight: 400;
@@ -911,6 +943,129 @@ body {
     color: rgba(4, 8, 39, 1);
     opacity: 0.5;
 }
+
+
+/* footer form */
+
+.wrapper {
+    width: 100%;
+    background: #fff;
+    padding: 30px 0 30px 30px;
+}
+
+.wrapper:last-child {
+    margin-bottom: 35px;
+}
+
+.wrapper .input-data {
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper .input-data input {
+    outline: none;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid silver;
+}
+
+.wrapper .input-data textarea {
+    outline: none;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    min-height: 140px;
+    border-bottom: 2px solid silver;
+}
+
+.input-data input:focus~label,
+.input-data input:valid~label {
+    transform: translateY(-30px);
+    font-size: 22px;
+    color: rgba(4, 8, 39, 1);
+    opacity: 0.5;
+}
+
+.input-data textarea:focus~label,
+.input-data textarea:valid~label {
+    transform: translateY(-30px);
+    font-size: 22px;
+    color: rgba(4, 8, 39, 1);
+    opacity: 0.5;
+}
+
+.wrapper .input-data label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    color: rgba(4, 8, 39, 1);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    opacity: 0.5;
+}
+
+.input-data .underline {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+}
+
+.textarea-wrap .input-data .underline {
+    bottom: -100px;
+}
+
+.input-data .underline:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #4158d0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.input-data input:focus~.underline:before,
+.input-data input:valid~.underline:before {
+    transform: scaleX(1);
+}
+
+.input-data textarea:focus~.underline:before,
+.input-data textarea:valid~.underline:before {
+    transform: scaleX(1);
+}
+
+.napishite-nam-right button {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #252B33;
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+.napishite-nam-right button img {
+    margin-left: 14px;
+}
+
+
+/* footer form end */
 
 
 /* footer-wrap */
@@ -974,10 +1129,25 @@ footer {
 
 /* footer-wrap */
 
+.primary-topbar-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.primary-topbar-img .primary-topbar-img-cont {
+    width: 902px;
+    height: 1000px;
+    background-image: url(../img/bg-red.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
 
 /* адаптив */
 
-@media (min-width: 1251px) {
+
+/* @media (min-width: 1251px) {
     body::before {
         content: '';
         background-image: url('../img/bg-red.png');
@@ -991,4 +1161,4 @@ footer {
         max-width: 100%;
         height: 100%;
     }
-}
+} */
