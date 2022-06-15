@@ -579,7 +579,7 @@ body {
 }
 
 .rabotaem-nad-podklyucheniem {
-    background-image: url('/img/bg-blue.jpg');
+    background-image: url('../img/bg-blue.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
