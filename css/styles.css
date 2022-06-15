@@ -113,7 +113,7 @@ body {
 }
 
 .wrapper-img-top {
-    background-image: url('/img/bg1-2.jpg');
+    background-image: url('../img/bg1-2.jpg');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -304,7 +304,7 @@ body {
 
 .calc-info-steps .steps-item:first-child::before {
     content: '';
-    background-image: url('/img/svg/arrow001.svg');
+    background-image: url('../img/svg/arrow001.svg');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -316,7 +316,7 @@ body {
 
 .calc-info-steps .steps-item:nth-child(2)::before {
     content: '';
-    background-image: url('/img/svg/arrow002.svg');
+    background-image: url('../img/svg/arrow002.svg');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -459,7 +459,7 @@ body {
 
 .how-it-work-right .how-it-work-right-img {
     height: 916px;
-    background-image: url('/img/Mask\ group.png');
+    background-image: url('../img/mask.png');
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -603,7 +603,7 @@ body {
 /* hover effect */
 
 .rabotaem-nad-wrap tr:first-child td:first-child {
-    background-image: url('/img/logo/nbu-one.png');
+    background-image: url('../img/logo/nbu-one.png');
     background-position: center;
     background-repeat: no-repeat;
     opacity: 1;
@@ -611,7 +611,7 @@ body {
 
 .rabotaem-nad-wrap tr:first-child td:first-child:hover {
     background-color: #fff;
-    background-image: url('/img/logo/nbu-two.png');
+    background-image: url('../img/logo/nbu-two.png');
     background-position: center;
     background-repeat: no-repeat;
     opacity: 1;
@@ -773,7 +773,7 @@ body {
 
 .prichiny-vybrat-nas-img {
     height: 916px;
-    background-image: url('/img/girls-ib-blob.png');
+    background-image: url('../img/girls-ib-blob.png');
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -850,7 +850,7 @@ body {
 /* accordion */
 
 .chasto-zadavaemye-voprosy-bg {
-    background-image: url('/img/bg-bottom-white.jpg');
+    background-image: url('../img/bg-bottom-white.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100% 100%;
@@ -1138,7 +1138,7 @@ footer {
 .primary-topbar-img .primary-topbar-img-cont {
     width: 902px;
     height: 1000px;
-    background-image: url(../img/bg-red.png);
+    background-image: url("../img/bg-red.png");
     background-repeat: no-repeat;
     background-position: right;
 }
