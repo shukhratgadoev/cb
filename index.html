@@ -1,485 +1,620 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>cb</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <title>cb</title>
-</head>
+	<body>
+		<div class="wrapper-img-top">
+			<header>
+				<div class="container">
+					<div class="primary-topbar">
+						<div class="hamburger-wrap">
+							<div class="hamburger hamburger--collapse js-hamburger">
+								<div class="hamburger-box">
+									<div class="hamburger-inner"></div>
+								</div>
+							</div>
+						</div>
 
-<body>
-    <div class="wrapper-img-top">
-        <header>
-            <div class="container">
-                <div class="primary-topbar">
-                    <div class="hamburger-wrap">
-                        <div class="hamburger hamburger--collapse js-hamburger">
-                            <div class="hamburger-box">
-                                <div class="hamburger-inner"></div>
-                            </div>
-                        </div>
-                    </div>
+						<div class="primary-topbar__wrapper">
+							<ul class="primary-topbar__list">
+								<li class="primary-topbar__item">
+									<a href="/" class="primary-topbar__link active">Scoring.uz</a>
+								</li>
 
-                    <div class="primary-topbar__wrapper">
-                        <ul class="primary-topbar__list">
-                            <li class="primary-topbar__item">
-                                <a href="/" class="primary-topbar__link active">Scoring.uz</a>
-                            </li>
+								<li class="primary-topbar__item middle-block">
+									<ul class="inner-items">
+										<li class="primary-topbar__inner">
+											<a href="/" class="primary-topbar__link">О проекте</a>
+										</li>
+										<li class="primary-topbar__inner">
+											<a href="/" class="primary-topbar__link">Партнерам</a>
+										</li>
+										<li class="primary-topbar__inner">
+											<a href="/" class="primary-topbar__link">Калькулятор</a>
+										</li>
+									</ul>
+								</li>
 
-                            <li class="primary-topbar__item middle-block">
-                                <ul class="inner-items">
-                                    <li class="primary-topbar__inner">
-                                        <a href="/" class="primary-topbar__link">О проекте</a>
-                                    </li>
-                                    <li class="primary-topbar__inner">
-                                        <a href="/" class="primary-topbar__link">Партнерам</a>
-                                    </li>
-                                    <li class="primary-topbar__inner">
-                                        <a href="/" class="primary-topbar__link">Калькулятор</a>
-                                    </li>
-                                </ul>
-                            </li>
+								<li class="primary-topbar__item" style="display: none">
+									<div class="primary-topbar__link">
+										<span
+											class="primary-topbar__link-lang primary-topbar__link-lang--ru"
+										>
+											RU
+										</span>
+										<div class="primary-topbar__submenu">
+											<ul class="primary-topbar__submenu-list">
+												<li class="primary-topbar__submenu-item">
+													<a
+														href="/"
+														class="primary-topbar__submenu-link primary-topbar__submenu-link--lang active"
+													>
+														Рус
+													</a>
+												</li>
+												<li class="primary-topbar__submenu-item">
+													<a
+														href="/uz/"
+														class="primary-topbar__submenu-link primary-topbar__submenu-link--lang"
+													>
+														O'zb
+													</a>
+												</li>
+												<li class="primary-topbar__submenu-item">
+													<a
+														href="/en/"
+														class="primary-topbar__submenu-link primary-topbar__submenu-link--lang"
+													>
+														Eng
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="primary-topbar__item">
+									<a href="”tel:+998981234567″" class="primary-topbar__link"
+										>+ 998 98 123 4567</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="primary-topbar-img">
+					<div class="primary-topbar-img-cont"></div>
+				</div>
+			</header>
+			<section class="calc-info">
+				<div class="container">
+					<div class="calc-info-wrapper">
+						<div class="calc-info-left">
+							<h1>
+								Отправьте одну заявку <br />
+								на
+								<span
+									>кредит сразу в десятки <br />
+									банков Узбекистана</span
+								>
+							</h1>
+							<div class="calc-info-steps">
+								<div class="steps-item">
+									<img src="img/svg/view-list.svg" alt="view" />
+									<p>
+										Вы заполняете <br />
+										анкету
+									</p>
+								</div>
 
-                            <li class="primary-topbar__item" style="display: none">
-                                <div class="primary-topbar__link">
-                                    <span class="primary-topbar__link-lang primary-topbar__link-lang--ru">
-                                            RU
-                                        </span>
-                                    <div class="primary-topbar__submenu">
-                                        <ul class="primary-topbar__submenu-list">
-                                            <li class="primary-topbar__submenu-item">
-                                                <a href="/" class="primary-topbar__submenu-link primary-topbar__submenu-link--lang active">
-                                                        Рус
-                                                    </a>
-                                            </li>
-                                            <li class="primary-topbar__submenu-item">
-                                                <a href="/uz/" class="primary-topbar__submenu-link primary-topbar__submenu-link--lang">
-                                                        O'zb
-                                                    </a>
-                                            </li>
-                                            <li class="primary-topbar__submenu-item">
-                                                <a href="/en/" class="primary-topbar__submenu-link primary-topbar__submenu-link--lang">
-                                                        Eng
-                                                    </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="primary-topbar__item">
-                                <a href="”tel:+998981234567″" class="primary-topbar__link">+ 998 98 123 4567</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="primary-topbar-img">
-                <div class="primary-topbar-img-cont"></div>
-            </div>
-        </header>
-        <section class="calc-info">
-            <div class="container">
-                <div class="calc-info-wrapper">
-                    <div class="calc-info-left">
-                        <h1>
-                            Отправьте одну заявку <br /> на
-                            <span>кредит сразу в десятки <br />
-                                    банков Узбекистана</span
-                                >
-                            </h1>
-                            <div class="calc-info-steps">
-                                <div class="steps-item">
-                                    <img src="img/svg/view-list.svg" alt="view" />
-                                    <p>
-                                        Вы заполняете <br />
-                                        анкету
-                                    </p>
-                                </div>
-     
-                                <div class="steps-item">
-                                    <img src="img/svg/send-icon.svg" alt="view" />
-                                    <p>
-                                        Мы рассылаем их <br />
-                                        в десятки банков
-                                    </p>
-                                </div>
-    
-                                <div class="steps-item">
-                                    <img src="img/svg/check-icon.svg" alt="view" />
-                                    <p>
-                                        Сообщаем где вам <br />
-                                        одобрят кредит
-                                    </p>
-                                </div>
-                            </div>
-                            <p class="bottom-item">Экономим до 10 часов вашего времени</p>
-                            <a class="more" href="#">→&nbsp&nbspПодробнее</a>
-                    </div>
-                    <div class="calc-info-right">
-                        <div class="calc-form">
-                            <form action="">
-                                <div class="cel-kredita">
-                                    <p>Цель кредита</p>
-                                    <div class="cel-kredita-wrap">
-                                        <div class="cel-kredita-item">
-                                            <input type="radio" id="html" name="fav_language" value="HTML" />
-                                            <label for="html">Автомобиль</label>
-                                            <br />
-                                        </div>
-                                        <div class="cel-kredita-item">
-                                            <input type="radio" id="css" name="fav_language" value="CSS" />
-                                            <label for="css">Ипотека</label>
-                                            <br />
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="select-car">
-                                    <label for="cars" style="display: none">Choose a car:</label>
-                                    <select name="cars" id="cars">
-                                            <option value="volvo">Chevrolet Cobalt</option>
-                                            <option value="saab">Saab</option>
-                                            <option value="mercedes">Mercedes</option>
-                                            <option value="audi">Audi</option>
-                                        </select>
-                                </div>
-    
-                                <div class="obshchaya-summa-kredita">
-                                    <label for="obshchaya-summa-kredita">Общая сумма кредита</label
-                                        >
-                                        <input
-                                            type="text"
-                                            name="obshchaya-summa-kredita"
-                                            id="obshchaya-summa-kredita"
-                                            value="10 000 000"
-                                        />
-                                    </div>
-                                    <div class="pervonachalnyj-vznos">
-                                        <div class="pervonachalnyj-vznos-item">
-                                            <label for="pervonachalnyj-vznos"
-                                                >Первоначальный взнос</label
-                                            >
-                                            <input
-                                                type="text"
-                                                name="pervonachalnyj-vznos"
-                                                id="pervonachalnyj-vznos"
-                                                value="10 000 000"
-                                            />
-                                        </div>
-    
-                                        <div class="pervonachalnyj-vznos-item">
-                                            <label for="srok-kredita">Срок кредита</label>
-                                    <select name="srok-kredita" id="srok-kredita">
-                                                <option value="volvo">3 мес</option>
-                                                <option value="saab">6 мес</option>
-                                                <option value="mercedes">12 мес</option>
-                                                <option value="audi">24 мес</option>
-                                                <option value="audi">48 мес</option>
-                                            </select>
-                                </div>
-                        </div>
-    
-                        <div class="summa-zajma">
-                            <label for="summa-zajma">Сумма займа</label>
-                            <input type="text" name="summa-zajma" id="summa-zajma" value="300 000 000 сум" readonly size="12" />
-                        </div>
-    
-                        <div class="form-btn">
-                            <button>
-                                            Продолжить<img src="img/svg/Arrow2.svg" alt="arrow" />
-                                        </button>
-                        </div>
-    
-                        <div class="form-checkbox">
-                            <input type="checkbox" name="form-checkbox" id="form-checkbox" />
-                            <div>
-                                <label for="form-checkbox">Заполняя форму, я принимаю
-                                                <span>
-                                                    правила обмена информацией с банками и условия
-                                                    конфиденциальности</span
-                                                ></label
-                                            >
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        <section class="how-it-work">
-                <div class="container">
-                    <div class="how-it-work-wrap">
-                        <div class="how-it-work-left">
-                            <h2>Как это работает?</h2>
-                            <div class="steps">
-                                <div class="steps-item">
-                                    <img src="img/svg/one.svg" alt="1" />
-                                    <p>
-                                        Вы <span> заполняете форму</span> со всеми данными о кредите, о себе
-                            </p>
-                    </div>
-                    <div class="steps-item">
-                        <div class="steps-item-arr">
-                            <img src="img/svg/arrowLeft.svg" alt="arrow" />
-                        </div>
+								<div class="steps-item">
+									<img src="img/svg/send-icon.svg" alt="view" />
+									<p>
+										Мы рассылаем их <br />
+										в десятки банков
+									</p>
+								</div>
 
-                        <div style="padding-left: 125px">
-                            <img src="img/svg/two.svg" alt="2" />
-                            <p>Мы отправляем введенные данные своим банкам-партнерам</p>
-                        </div>
-                    </div>
-                    <div class="steps-item">
-                        <div class="steps-item-arr-three">
-                            <img src="img/svg/arrowRight.svg" alt="arrow" />
-                        </div>
-                        <img src="img/svg/three.svg" alt="3" />
-                        <div class="steps-item-inner">
-                            Выдаем Вам готовый результат:
-                            <br />
-                            <ol>
-                                <li>
-                                    список банков, которые готовы Вам предоставить <br /> кредит
-                                </li>
-                                <li>их условия и сколько Вы заплатите процентов им</li>
-                                <li>
-                                    возможность сразу подать заявку на <br /> привлекательное предложение
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </div>
-    </div>
-    <div class="how-it-work-right">
-        <div class="how-it-work-right-img"></div>
-    </div>
-    </section>
-    </div>
-    <section class="rabotaem-nad-podklyucheniem">
-        <div class="container">
-            <div class="rabotaem-nad-heiding">
-                <h2>Работаем над <br> подключением</h2>
-            </div>
-            <div class="rabotaem-nad-wrap">
+								<div class="steps-item">
+									<img src="img/svg/check-icon.svg" alt="view" />
+									<p>
+										Сообщаем где вам <br />
+										одобрят кредит
+									</p>
+								</div>
+							</div>
+							<p class="bottom-item">Экономим до 10 часов вашего времени</p>
+							<a class="more" href="#">→&nbsp&nbspПодробнее</a>
+						</div>
+						<div class="calc-info-right">
+							<div class="calc-form">
+								<form action="">
+									<div class="cel-kredita">
+										<p>Цель кредита</p>
+										<div class="cel-kredita-wrap">
+											<div class="cel-kredita-item">
+												<input
+													type="radio"
+													id="html"
+													name="fav_language"
+													value="HTML"
+												/>
+												<label for="html">Автомобиль</label>
+												<br />
+											</div>
+											<div class="cel-kredita-item">
+												<input
+													type="radio"
+													id="css"
+													name="fav_language"
+													value="CSS"
+												/>
+												<label for="css">Ипотека</label>
+												<br />
+											</div>
+										</div>
+									</div>
 
-                <div class="table-row">
-                    <div class="table-items  table-items--white">
-                        <img src="img/svg/ofb.svg" alt="ofb">
-                    </div>
-                    <div class="table-items">
-                        <img src="img/svg/nbu.svg" alt="nbu">
-                    </div>
-                    <div class="table-items">
-                        <img src="img/svg/sqb.svg" alt="sqb">
-                    </div>
-                    <div class="table-items">
-                        <img src="img/svg/anorbank.svg" alt="amorbank">
-                    </div>
-                    <div class="table-items  table-items--white">
-                        <img src="img/svg/hamkorbank.svg" alt="hamkorbank">
-                    </div>
-                    <div class="table-items  table-items--white">
-                        <img src="img/svg/ipoteka.svg" alt="ipotekabank">
-                    </div>
-                    <div class="table-items  table-items--white">
-                        <img src="img/svg/turonbank.svg" alt="turonbank">
-                    </div>
-                    <div class="table-items  table-items--white">
-                        <img src="img/svg/sqb.svg" alt="">
-                    </div>
-                    <div class="table-items  table-items--white">
-                        <img src="img/svg/htbbank.svg" alt="htbbank">
-                    </div>
-                    <div class="table-items  table-items--white">
-                        <img src="img/svg/asiabank.svg" alt="asiabank">
-                    </div>
-                    <div class="table-items  table-items--white">
-                        <img src="img/svg/sqb.svg" alt="sqb">
-                    </div>
-                    <div class="table-items  table-items--white">
-                        <img src="img/svg/xalqbank.svg" alt="xalqbank">
-                    </div>
-                    <div class="table-items  table-items--white">
-                        <img src="img/svg/trastbank.svg" alt="trastbank">
-                    </div>
-                    <div class="table-items  table-items--white">
-                        <img src="img/svg/savdobank.svg" alt="savdobank">
-                    </div>
-                    <div class="table-items  table-items--white">
-                        <img src="img/svg/htbbank.svg" alt="htbbank">
-                    </div>
-                    <div class="table-items  table-items--white">
-                        <img src="img/svg/asiabank.svg" alt="asiabank">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="chasto-zadavaemye-voprosy-bg">
-        <section>
-            <div class="prichiny-vybrat-nas">
-                <div class="prichiny-vybrat-nas-wrap">
-                    <div>
-                        <div class="prichiny-vybrat-nas-text">
-                            <h2>Причины <br> выбрать нас</h2>
-                            <div class="prichiny-vybrat-nas-list">
-                                <ul>
-                                    <li><span>01</span>Поможем найти самое выгодное предложение</li>
-                                    <li><span>02</span>Выбрать самые удобные условия кредита</li>
-                                    <li><span>03</span>Вы сразу найдете кредиторов, которые готовы предоставить Вам кредит</li>
-                                    <li><span>04</span>Все бесплатно и без обязательств</li>
-                                    <li><span>05</span>Все введенные данные конфиденциальны и не попадут в руки мошенникам</li>
-                                </ul>
-                            </div>
-                            <div class="form-btn">
-                                <button>
-                                    Сравнить кредиторов<img src="img/svg/Arrow2.svg" alt="arrow" />
-                                </button>
-                            </div>
-                        </div>
-                        <div class="prichiny-vybrat-nas-right">
-                            <div class="prichiny-vybrat-nas-img"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="chasto-zadavaemye-voprosy">
-            <div class="container">
-                <div class="chasto-zadavaemye-voprosy-wrap">
-                    <h2>Часто задаваемые вопросы</h2>
+									<div class="select-car">
+										<label for="cars" style="display: none"
+											>Choose a car:</label
+										>
+										<select name="cars" id="cars">
+											<option value="volvo">Chevrolet Cobalt</option>
+											<option value="saab">Saab</option>
+											<option value="mercedes">Mercedes</option>
+											<option value="audi">Audi</option>
+										</select>
+									</div>
 
-                    <div class="button-wrap">
-                        <button class="accordion">Как я могу посмотреть информацию о кредиторах? <img src="./img/svg/chevron.svg" alt=""></button>
-                        <div class="panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                    </div>
+									<div class="obshchaya-summa-kredita">
+										<label for="obshchaya-summa-kredita"
+											>Общая сумма кредита</label
+										>
+										<input
+											type="text"
+											name="obshchaya-summa-kredita"
+											id="obshchaya-summa-kredita"
+											value="10 000 000"
+										/>
+									</div>
+									<div class="pervonachalnyj-vznos">
+										<div class="pervonachalnyj-vznos-item">
+											<label for="pervonachalnyj-vznos"
+												>Первоначальный взнос</label
+											>
+											<input
+												type="text"
+												name="pervonachalnyj-vznos"
+												id="pervonachalnyj-vznos"
+												value="10 000 000"
+											/>
+										</div>
 
-                    <div class="button-wrap">
-                        <button class="accordion">Как мне отказаться от кредита? <img src="./img/svg/chevron.svg" alt=""></button>
-                        <div class="panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                    </div>
+										<div class="pervonachalnyj-vznos-item">
+											<label for="srok-kredita">Срок кредита</label>
+											<select name="srok-kredita" id="srok-kredita">
+												<option value="volvo">3 мес</option>
+												<option value="saab">6 мес</option>
+												<option value="mercedes">12 мес</option>
+												<option value="audi">24 мес</option>
+												<option value="audi">48 мес</option>
+											</select>
+										</div>
+									</div>
 
-                    <div class="button-wrap">
-                        <button class="accordion">Я могу взять кредит напрямую у банка? <img src="./img/svg/chevron.svg" alt=""></button>
-                        <div class="panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                    </div>
+									<div class="summa-zajma">
+										<label for="summa-zajma">Сумма займа</label>
+										<input
+											type="text"
+											name="summa-zajma"
+											id="summa-zajma"
+											value="300 000 000 сум"
+											readonly
+											size="12"
+										/>
+									</div>
 
-                    <div class="button-wrap">
-                        <button class="accordion">Что делается с моей информацией, которую я заполняю в бланках? <img src="./img/svg/chevron.svg" alt=""></button>
-                        <div class="panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                    </div>
+									<div class="form-btn">
+										<button>
+											Продолжить<img src="img/svg/Arrow2.svg" alt="arrow" />
+										</button>
+									</div>
 
-                    <div class="button-wrap">
-                        <button class="accordion">Что я получу в итоге? <img src="./img/svg/chevron.svg" alt=""></button>
-                        <div class="panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                    </div>
+									<div class="form-checkbox">
+										<input
+											type="checkbox"
+											name="form-checkbox"
+											id="form-checkbox"
+										/>
+										<div>
+											<label for="form-checkbox"
+												>Заполняя форму, я принимаю
+												<span>
+													правила обмена информацией с банками и условия
+													конфиденциальности</span
+												></label
+											>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="how-it-work">
+				<div class="container">
+					<div class="how-it-work-wrap">
+						<div class="how-it-work-left">
+							<h2>Как это работает?</h2>
+							<div class="steps">
+								<div class="steps-item">
+									<img src="img/svg/one.svg" alt="1" />
+									<p>
+										Вы <span> заполняете форму</span> со всеми данными о
+										кредите, о себе
+									</p>
+								</div>
+								<div class="steps-item">
+									<div class="steps-item-arr">
+										<img src="img/svg/arrowLeft.svg" alt="arrow" />
+									</div>
 
-                    <div class="button-wrap">
-                        <button class="accordion">Какая комиссия у Вашего сервиса? <img src="./img/svg/chevron.svg" alt=""></button>
-                        <div class="panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									<div style="padding-left: 125px">
+										<img src="img/svg/two.svg" alt="2" />
+										<p>Мы отправляем введенные данные своим банкам-партнерам</p>
+									</div>
+								</div>
+								<div class="steps-item">
+									<div class="steps-item-arr-three">
+										<img src="img/svg/arrowRight.svg" alt="arrow" />
+									</div>
+									<img src="img/svg/three.svg" alt="3" />
+									<div class="steps-item-inner">
+										Выдаем Вам готовый результат:
+										<br />
+										<ol>
+											<li>
+												список банков, которые готовы Вам предоставить <br />
+												кредит
+											</li>
+											<li>их условия и сколько Вы заплатите процентов им</li>
+											<li>
+												возможность сразу подать заявку на <br />
+												привлекательное предложение
+											</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="how-it-work-right">
+					<div class="how-it-work-right-img"></div>
+				</div>
+			</section>
+		</div>
+		<section class="rabotaem-nad-podklyucheniem">
+			<div class="container">
+				<div class="rabotaem-nad-heiding">
+					<h2>
+						Работаем над <br />
+						подключением
+					</h2>
+				</div>
+				<div class="rabotaem-nad-wrap">
+					<div class="table-row">
+						<div class="table-items table-items--white">
+							<img src="img/svg/ofb.svg" alt="ofb" />
+						</div>
+						<div class="table-items">
+							<img src="img/svg/nbu.svg" alt="nbu" />
+						</div>
+						<div class="table-items">
+							<img src="img/svg/sqb.svg" alt="sqb" />
+						</div>
+						<div class="table-items">
+							<img src="img/svg/anorbank.svg" alt="amorbank" />
+						</div>
+						<div class="table-items table-items--white">
+							<img src="img/svg/hamkorbank.svg" alt="hamkorbank" />
+						</div>
+						<div class="table-items table-items--white">
+							<img src="img/svg/ipoteka.svg" alt="ipotekabank" />
+						</div>
+						<div class="table-items table-items--white">
+							<img src="img/svg/turonbank.svg" alt="turonbank" />
+						</div>
+						<div class="table-items table-items--white">
+							<img src="img/svg/sqb.svg" alt="" />
+						</div>
+						<div class="table-items table-items--white">
+							<img src="img/svg/htbbank.svg" alt="htbbank" />
+						</div>
+						<div class="table-items table-items--white">
+							<img src="img/svg/asiabank.svg" alt="asiabank" />
+						</div>
+						<div class="table-items table-items--white">
+							<img src="img/svg/sqb.svg" alt="sqb" />
+						</div>
+						<div class="table-items table-items--white">
+							<img src="img/svg/xalqbank.svg" alt="xalqbank" />
+						</div>
+						<div class="table-items table-items--white">
+							<img src="img/svg/trastbank.svg" alt="trastbank" />
+						</div>
+						<div class="table-items table-items--white">
+							<img src="img/svg/savdobank.svg" alt="savdobank" />
+						</div>
+						<div class="table-items table-items--white">
+							<img src="img/svg/htbbank.svg" alt="htbbank" />
+						</div>
+						<div class="table-items table-items--white">
+							<img src="img/svg/asiabank.svg" alt="asiabank" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="chasto-zadavaemye-voprosy-bg">
+			<section>
+				<div class="prichiny-vybrat-nas">
+					<div class="prichiny-vybrat-nas-wrap">
+						<div>
+							<div class="prichiny-vybrat-nas-text">
+								<h2>
+									Причины <br />
+									выбрать нас
+								</h2>
+								<div class="prichiny-vybrat-nas-list">
+									<ul>
+										<li>
+											<span>01</span>Поможем найти самое выгодное предложение
+										</li>
+										<li>
+											<span>02</span>Выбрать самые удобные условия кредита
+										</li>
+										<li>
+											<span>03</span>Вы сразу найдете кредиторов, которые готовы
+											предоставить Вам кредит
+										</li>
+										<li><span>04</span>Все бесплатно и без обязательств</li>
+										<li>
+											<span>05</span>Все введенные данные конфиденциальны и не
+											попадут в руки мошенникам
+										</li>
+									</ul>
+								</div>
+								<div class="form-btn">
+									<button>
+										Сравнить кредиторов<img
+											src="img/svg/Arrow2.svg"
+											alt="arrow"
+										/>
+									</button>
+								</div>
+							</div>
+							<div class="prichiny-vybrat-nas-right">
+								<div class="prichiny-vybrat-nas-img"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="chasto-zadavaemye-voprosy">
+				<div class="container">
+					<div class="chasto-zadavaemye-voprosy-wrap">
+						<h2>Часто задаваемые вопросы</h2>
 
-                        </div>
-                    </div>
+						<div class="button-wrap">
+							<button class="accordion">
+								Как я могу посмотреть информацию о кредиторах?
+								<img src="./img/svg/chevron.svg" alt="" />
+							</button>
+							<div class="panel">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim veniam, quis nostrud exercitation ullamco
+									laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+							</div>
+						</div>
 
-                    <div class="button-wrap">
-                        <button class="accordion">Есть ли у Вас дополнительные предложения? <img src="./img/svg/chevron.svg" alt=""></button>
-                        <div class="panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    
+						<div class="button-wrap">
+							<button class="accordion">
+								Как мне отказаться от кредита?
+								<img src="./img/svg/chevron.svg" alt="" />
+							</button>
+							<div class="panel">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim veniam, quis nostrud exercitation ullamco
+									laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+							</div>
+						</div>
 
+						<div class="button-wrap">
+							<button class="accordion">
+								Я могу взять кредит напрямую у банка?
+								<img src="./img/svg/chevron.svg" alt="" />
+							</button>
+							<div class="panel">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim veniam, quis nostrud exercitation ullamco
+									laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+							</div>
+						</div>
 
-    <section>
-        <div class="napishite-nam">
-            <div class="container">
-                <div class="napishite-nam-wrap">
-                    <div class="napishite-nam-left">
-                        <h2>Напишите нам <img src="./img/svg/airplane 1.svg" alt="air"></h2>
-                        <p>Опишите нам свои вопросы или пожаления, <br> и мы Вам ответим как можно быстрее</p>
-                        <div class="napishite-nam-left-bottom">
-                            <div class="item">
-                                <h4>Телефон</h4>
-                                <a href="tel:998 98 123 4567">+998 98 123 4567</a>
-                            </div>
-                            <div class="item">
-                                <h4>Email</h4>
-                                <a href="mailto:example@mail.ru">example@mail.ru</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="napishite-nam-right">
-                        <form action="" method="get" id="form">
+						<div class="button-wrap">
+							<button class="accordion">
+								Что делается с моей информацией, которую я заполняю в бланках?
+								<img src="./img/svg/chevron.svg" alt="" />
+							</button>
+							<div class="panel">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim veniam, quis nostrud exercitation ullamco
+									laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+							</div>
+						</div>
 
-                            <div class="wrapper">
-                                <div class="input-data">
-                                    <input type="text" class="vashe-imya" name="vashe-imya" id="vashe-imya" required>
-                                    <div class="underline"></div>
-                                    <label for="vashe-imya">Ваше имя</label>
-                                </div>
-                            </div>
-                            <div class="wrapper">
-                                <div class="input-data">
-                                    <input type="text" class="vasha-pochta-ili-nomer-telefona" name="vasha-pochta-ili-nomer-telefona" id="vasha-pochta-ili-nomer-telefona" required>
-                                    <div class="underline"></div>
-                                    <label for="vasha-pochta-ili-nomer-telefona">Ваша почта или номер телефона</label>
-                                </div>
-                            </div>
-                            <div class="wrapper textarea-wrap">
-                                <div class="input-data">
-                                    <textarea type="text" class="vashe-soobshchenie" name="vashe-soobshchenie" id="vashe-soobshchenie" required></textarea>
-                                    <div class="underline"></div>
-                                    <label for="vashe-soobshchenie">Ваше сообщение</label>
-                                </div>
-                            </div>
-                            <div>
-                                <button type="submit" form="form" value="Submit">Отправить <img src="img/svg/arrow-right.svg" alt="arrow"></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div class="footer-wrap">
-                <div class="footer-logo">
-                    <h3>Scoring.uz</h3>
-                    <h2>© 2022 Scoring.uz</h2>
-                </div>
-                <div class="footer-right">
-                    <ul>
-                        <li><a href="#">Условия использования</a></li>
-                        <li><a href="#">Защита данных</a></li>
-                        <li><a href="#">Конфиденциальность</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="js/scripts.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-</body>
+						<div class="button-wrap">
+							<button class="accordion">
+								Что я получу в итоге? <img src="./img/svg/chevron.svg" alt="" />
+							</button>
+							<div class="panel">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim veniam, quis nostrud exercitation ullamco
+									laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+							</div>
+						</div>
 
+						<div class="button-wrap">
+							<button class="accordion">
+								Какая комиссия у Вашего сервиса?
+								<img src="./img/svg/chevron.svg" alt="" />
+							</button>
+							<div class="panel">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim veniam, quis nostrud exercitation ullamco
+									laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+							</div>
+						</div>
+
+						<div class="button-wrap">
+							<button class="accordion">
+								Есть ли у Вас дополнительные предложения?
+								<img src="./img/svg/chevron.svg" alt="" />
+							</button>
+							<div class="panel">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim veniam, quis nostrud exercitation ullamco
+									laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<section>
+			<div class="napishite-nam">
+				<div class="container">
+					<div class="napishite-nam-wrap">
+						<div class="napishite-nam-left">
+							<h2>
+								Напишите нам <img src="./img/svg/airplane 1.svg" alt="air" />
+							</h2>
+							<p>
+								Опишите нам свои вопросы или пожаления, <br />
+								и мы Вам ответим как можно быстрее
+							</p>
+							<div class="napishite-nam-left-bottom">
+								<div class="item">
+									<h4>Телефон</h4>
+									<a href="tel:998 98 123 4567">+998 98 123 4567</a>
+								</div>
+								<div class="item">
+									<h4>Email</h4>
+									<a href="mailto:example@mail.ru">example@mail.ru</a>
+								</div>
+							</div>
+						</div>
+						<div class="napishite-nam-right">
+							<form action="" method="get" id="form">
+								<div class="wrapper">
+									<div class="input-data">
+										<input
+											type="text"
+											class="vashe-imya"
+											name="vashe-imya"
+											id="vashe-imya"
+											required
+										/>
+										<div class="underline"></div>
+										<label for="vashe-imya">Ваше имя</label>
+									</div>
+								</div>
+								<div class="wrapper">
+									<div class="input-data">
+										<input
+											type="text"
+											class="vasha-pochta-ili-nomer-telefona"
+											name="vasha-pochta-ili-nomer-telefona"
+											id="vasha-pochta-ili-nomer-telefona"
+											required
+										/>
+										<div class="underline"></div>
+										<label for="vasha-pochta-ili-nomer-telefona"
+											>Ваша почта или номер телефона</label
+										>
+									</div>
+								</div>
+								<div class="wrapper textarea-wrap">
+									<div class="input-data">
+										<textarea
+											type="text"
+											class="vashe-soobshchenie"
+											name="vashe-soobshchenie"
+											id="vashe-soobshchenie"
+											required
+										></textarea>
+										<div class="underline"></div>
+										<label for="vashe-soobshchenie">Ваше сообщение</label>
+									</div>
+								</div>
+								<div>
+									<button type="submit" form="form" value="Submit">
+										Отправить <img src="img/svg/arrow-right.svg" alt="arrow" />
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="footer-wrap">
+					<div class="footer-logo">
+						<h3>Scoring.uz</h3>
+						<h2>© 2022 Scoring.uz</h2>
+					</div>
+					<div class="footer-right">
+						<ul>
+							<li><a href="#">Условия использования</a></li>
+							<li><a href="#">Защита данных</a></li>
+							<li><a href="#">Конфиденциальность</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/scripts.js"></script>
+	</body>
 </html>
