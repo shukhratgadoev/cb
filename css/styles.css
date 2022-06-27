@@ -540,6 +540,14 @@ body {
 	border: none;
 	outline: none;
 }
+.calc-form .form-btn button a{
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+    text-decoration: none;
+    width: 100%;
+    color: #fff;
+}
 
 .form-btn button {
 	position: relative;
