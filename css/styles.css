@@ -1280,6 +1280,14 @@ footer {
 	padding: 22px 18px 21px 20px;
 	background-color: rgba(243, 243, 245, 1);
 	margin-right: 17px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.steps-line ul li .steps-line-img .active-class {
+	color: #040827;
 }
 
 .steps-line ul li .steps-line-img-inner {
@@ -1582,4 +1590,100 @@ footer {
 	left: 271px;
 	width: 110px;
 	height: 88px;
+}
+
+.form-block .bottom-text h2{
+	text-align: center;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 135%;
+	text-align: center;
+	color: #040827;
+}
+
+.result-block .result-block-bank{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 62px;
+}
+
+.result-block .result-bottom-text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #BEB1B1;
+	padding-bottom: 63px;
+	margin-bottom: 38px;
+}
+
+.result-block .result-bottom-text h3{
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 140%;
+	text-align: center;
+	color: #040827;
+}
+.result-block .footer-btn {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.result-block .footer-btn button {
+	background: #30be9e;
+	border-radius: 8px;
+	height: 68px;
+	width: 255px;
+	border: none;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 140%;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.result-bottom-block{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 80px;
+}
+
+.result-bottom-block .result-item h4{
+	font-style: normal;
+	font-weight: 700;
+	font-size: 39px;
+	line-height: 140%;
+	text-align: center;
+	color: #040827;
+}
+
+.result-bottom-block .result-item p{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 140%;
+	text-align: center;
+	color: #BABFC6;
+}
+.result-steps-img h3, .result-steps-img + p{
+	color: #040827;
+}
+
+.finish-bottom-text {
+	margin-bottom: 60px;
+}
+
+.finish-bottom-text h3{
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 140%;
+	text-align: center;
+	color: #040827;
 }
