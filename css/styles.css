@@ -312,23 +312,24 @@ body {
 	background-size: 100% 100%;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 26px;
-	width: 162px;
+	height: 22px;
+	width: 121px;
 	position: absolute;
-	left: 35px;
+	left: 60px;
+	top: 10px;
 }
 
 .calc-info-steps .steps-item:nth-child(2)::before {
 	content: '';
-	background-image: url('../img/svg/arrow002.svg');
+	background-image: url('../img/svg/arrow001.svg');
 	background-size: 100% 100%;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 26px;
-	width: 162px;
+	height: 22px;
+	width: 121px;
 	position: absolute;
-	left: 240px;
-	top: 20px;
+	left: 265px;
+	top: 10px;
 }
 
 .calc-info-steps p {
@@ -514,6 +515,7 @@ body {
 	font-size: 20px;
 	padding: 0 17px 0 14px;
 	outline: none;
+	margin-top: 12px;
 }
 
 .summa-zajma {
@@ -1118,6 +1120,10 @@ footer {
 	min-width: 626px;
 }
 
+.pervonachalnyj-vznos-real .pervonachalnyj-vznos-item-wrap input{
+	margin-top: 12px;
+}
+
 .footer-right ul li a {
 	font-style: normal;
 	font-weight: 400;
@@ -1198,6 +1204,8 @@ footer {
 	.cel-kredita-wrap {
 		margin-bottom: 20px;
 	}
+	
+
 	.select-car select,
 	.obshchaya-summa-kredita input,
 	.pervonachalnyj-vznos-item:first-child input {
@@ -1694,4 +1702,113 @@ footer {
 	line-height: 140%;
 	text-align: center;
 	color: #040827;
+}
+
+li .language {
+		position: relative;
+}
+
+li .language .language-wrap::after  {
+	content: url(/img/svg/ArrowSelect.svg);
+  font-size: 1rem;
+  top: 7px;
+  right: 9px;
+  position: absolute;
+}
+
+
+li .language select{
+		-webkit-appearance: none;
+		appearance: none;
+}
+
+li .language select{
+	outline: none;
+	width: 69px;
+	height: 36px;
+	background: #F3F3F3;
+	border: 1px solid #E8E8E8;
+	border-radius: 5px;
+	padding-left: 14px;
+}
+
+.inner-items li:nth-child(4){
+	margin-left: 145px;
+}
+
+
+.select-car select, .pervonachalnyj-vznos-item:last-child select{
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.wrap-real{
+	position: relative;
+}
+
+.select-car-wrap::after{
+	content: url(/img/svg/down.svg);
+  font-size: 1rem;
+  top: 20px;
+  right: 21px;
+  position: absolute;
+}
+
+.pervonachalnyj-vznos-real{
+	position: relative;
+}
+
+.pervonachalnyj-vznos-item-wrap::after{
+	content: url(/img/svg/down.svg);
+  font-size: 1rem;
+  top: 59px;
+  right: 21px;
+  position: absolute;
+}
+
+.noUi-horizontal {
+	height: 2;
+}
+.noUi-horizontal .noUi-handle {
+	border-radius: 50%;
+	background-color: #EBC048;
+	width: 16px;
+	height: 16px;
+	right: -16px;
+	top: -14px;
+	cursor: pointer;
+}
+
+.noUi-target {
+	background: #e5e5ed;
+}
+
+.noUi-handle {
+	background: url(../img/Rectangle23.png) no-repeat center center;
+	background-size: cover;
+	transition: transform 250ms ease 0s;
+	border: none;
+}
+
+.noUi-touch-area {
+	height: 100%;
+	width: 100%;
+}
+
+.noUi-handle:after,
+.noUi-handle:before {
+	display: none;
+}
+
+.noUi-origin {
+	will-change: transform;
+	position: absolute;
+	z-index: 1;
+	top: 5px;
+	right: 0;
+	-ms-transform-origin: 0 0;
+	-webkit-transform-origin: 0 0;
+	-webkit-transform-style: preserve-3d;
+	transform-origin: 0 0;
+	transform-style: flat;
 }
