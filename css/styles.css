@@ -467,6 +467,7 @@ body {
 	background-image: url('../img/mask.png');
 	background-repeat: no-repeat;
 	background-position: right;
+	background-size: 100%;
 }
 
 .pervonachalnyj-vznos {
@@ -555,7 +556,7 @@ body {
 	position: relative;
 	z-index: 999;
 	margin-bottom: 27px;
-	width: 480px;
+	width: 100%;
 	height: 68px;
 	background: #30be9e;
 	border-radius: 8px;
@@ -571,7 +572,9 @@ body {
 	padding: 0 30px 0 34px;
 	cursor: pointer;
 }
-
+.middle-btn button{
+	width: 430px;
+}
 .form-checkbox {
 	display: flex;
 	position: relative;
@@ -612,6 +615,9 @@ body {
 	margin-bottom: 43px;
 }
 
+.rabotaem-nad-heiding .for-mobile{
+display: none;
+}
 /* hover effect */
 
 .rabotaem-nad-wrap tr:first-child td:first-child {
@@ -776,7 +782,7 @@ body {
 }
 
 .prichiny-vybrat-nas-right {
-	width: 100%;
+	width: 50%;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -787,6 +793,7 @@ body {
 	background-image: url('../img/girls-ib-blob.png');
 	background-repeat: no-repeat;
 	background-position: right;
+	background-size: 100%;
 }
 
 .chasto-zadavaemye-voprosy-wrap {
@@ -940,7 +947,12 @@ body {
 .napishite-nam-right {
 	width: 50%;
 }
-
+.prichiny-vybrat-nas-text-mobile{
+	display: none;
+}
+.prichiny-vybrat-nas-text h3{
+	display: none;
+}
 .napishite-nam-right-item label {
 	font-style: normal;
 	font-weight: 400;
@@ -1163,63 +1175,7 @@ footer {
 		background-size: 60% 100%;
 	}
 }
-@media (max-width: 1300px) {
-	.container {
-		padding: 0 30px;
-	}
-	.primary-topbar__item:first-child a {
-		font-size: 20px;
-	}
-	.primary-topbar__item a,
-	.primary-topbar__item:last-child a {
-		font-size: 15px;
-	}
-	.calc-info-left h1 {
-		font-size: 35px;
-		margin-bottom: 35px;
-		line-height: 52px;
-	}
-	.calc-info-steps p {
-		font-size: 12px;
-	}
-	.calc-info-steps {
-		margin-bottom: 40px;
-	}
-	.calc-info-steps .steps-item:first-child::before {
-		background-size: 56% 100%;
-		left: 18px;
-	}
-	.calc-info-steps .steps-item:nth-child(2)::before {
-		width: 97px;
-		left: 210px;
-	}
-	.calc-form {
-		padding: 35px 25px 35px 25px;
-		width: 540px;
-	}
-	.calc-form .cel-kredita p {
-		margin-bottom: 15px;
-		font-size: 18px;
-	}
-	.cel-kredita-wrap {
-		margin-bottom: 20px;
-	}
-	
 
-	.select-car select,
-	.obshchaya-summa-kredita input,
-	.pervonachalnyj-vznos-item:first-child input {
-		max-width: 100%;
-		font-size: 16px;
-		height: 50px;
-		padding: 0 11px 0 10px;
-		margin-bottom: 25px;
-	}
-	.obshchaya-summa-kredita label,
-	.pervonachalnyj-vznos-item label {
-		font-size: 18px;
-	}
-}
 
 /* @media (min-width: 1251px) {
     body::before {
@@ -1811,4 +1767,308 @@ li .language select{
 	-webkit-transform-style: preserve-3d;
 	transform-origin: 0 0;
 	transform-style: flat;
+}
+@media (max-width: 1830px){
+	.prichiny-vybrat-nas {
+		padding-left: 270px;
+	}
+	.prichiny-vybrat-nas-right{
+		width: 45%;
+	}
+}
+@media (max-width: 1625px){
+	.prichiny-vybrat-nas {
+		padding-left: 230px;
+	}
+	.prichiny-vybrat-nas-right{
+		width: 45%;
+	}
+	.prichiny-vybrat-nas-list ul li{
+		max-width: 600px;
+		font-size: 20px;
+	}
+	.prichiny-vybrat-nas-text h2{
+		font-size: 55px;
+    line-height: 65px;
+	}
+}
+@media (max-width: 1480px){
+	.prichiny-vybrat-nas {
+		padding-left: 150px;
+	}
+}
+@media (max-width: 1400px){
+	.how-it-work-left h2{
+		font-size: 48px;
+    line-height: 48px;
+		margin-bottom: 33px
+	}
+	.how-it-work-left .steps-item:first-child p,
+	.how-it-work-left .steps-item:nth-child(2) p,
+	.how-it-work-left .steps-item .steps-item-inner,
+	how-it-work-left .steps-item:first-child p span {
+		font-size: 20px;
+	}
+	.rabotaem-nad-heiding{
+		font-size: 50px;
+    line-height: 50px;
+		margin-bottom: 28px;
+	}
+	.rabotaem-nad-podklyucheniem{
+		padding-top: 85px;
+    padding-bottom: 327px;
+	}
+	.table-row .table-items{
+		height: 190px;
+	}
+	.prichiny-vybrat-nas-wrap{
+		padding: 97px 0 88px 55px;
+	}
+	.prichiny-vybrat-nas {
+    padding-left: 100px;
+}
+
+}
+@media (max-width: 1300px) {
+	.container {
+		padding: 0 30px;
+	}
+	.primary-topbar__item:first-child a {
+		font-size: 20px;
+	}
+	.primary-topbar__item a,
+	.primary-topbar__item:last-child a {
+		font-size: 15px;
+	}
+	.calc-info-left h1 {
+		font-size: 35px;
+		margin-bottom: 35px;
+		line-height: 52px;
+	}
+	.calc-info-steps p {
+		font-size: 12px;
+	}
+	.calc-info-steps {
+		margin-bottom: 40px;
+	}
+	.calc-info-steps .steps-item:first-child::before {
+		background-size: 56% 100%;
+		left: 18px;
+	}
+	.calc-info-steps .steps-item:nth-child(2)::before {
+		background-size: 56% 100%;
+		left: 183px;
+	}
+	.calc-form {
+		padding: 35px 25px 35px 25px;
+		width: 540px;
+	}
+	.calc-form .cel-kredita p {
+		margin-bottom: 15px;
+		font-size: 18px;
+	}
+	.cel-kredita-wrap {
+		margin-bottom: 20px;
+	}
+	
+
+	.select-car select,
+	.obshchaya-summa-kredita input,
+	.pervonachalnyj-vznos-item:first-child input,
+	.pervonachalnyj-vznos-item:last-child select {
+		max-width: 100%;
+		font-size: 16px;
+		height: 50px;
+		padding: 0 11px 0 10px;
+		margin-bottom: 25px;
+	}
+	.obshchaya-summa-kredita label,
+	.pervonachalnyj-vznos-item label {
+		font-size: 18px;
+	}
+	.inner-items li:nth-child(4){
+		margin-left: 70px;
+	}
+	.pervonachalnyj-vznos-item:first-child input{
+		max-width: 95%;
+	}
+	.select-car-wrap::after{
+		top: 15px;
+	}
+	.pervonachalnyj-vznos-item-wrap::after{
+		top: 51px;
+	}
+	.summa-zajma input{
+		font-size: 25px;
+	}
+	.prichiny-vybrat-nas-text h2 {
+    font-size: 50px;
+    line-height: 60px;
+}
+.prichiny-vybrat-nas-list ul li {
+	max-width: 540px;
+	font-size: 18px;
+}
+}
+@media (max-width: 1200px){
+	.how-it-work-left h2{
+		font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+	}
+	.how-it-work-left .steps-item:first-child p, 
+	.how-it-work-left .steps-item:nth-child(2) p, 
+	.how-it-work-left .steps-item .steps-item-inner,
+	.how-it-work-left .steps-item:first-child p span{
+		font-size: 18px;
+	}
+	.rabotaem-nad-heiding{
+		font-size: 40px;
+    line-height: 45px;
+	}
+	.rabotaem-nad-podklyucheniem{
+		padding-top: 55px;
+    padding-bottom: 295px;
+	}
+	.chasto-zadavaemye-voprosy-wrap h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+}
+@media (max-width: 1120px) {
+	.middle-block{
+		width: 60%;
+	}
+	.calc-info-left h1{
+		font-size: 27px;
+	}
+	.calc-form{
+		width: 500px;
+	}
+	.form-btn button{
+		font-size: 15px;
+	}
+	.pervonachalnyj-vznos{
+		margin-bottom: 0;
+	}
+	.summa-zajma{
+		margin-bottom: 20px;
+	}
+	.form-checkbox label{
+		font-size: 14px;
+	}
+	.calc-info-left .bottom-item{
+		font-size: 18px;
+		margin-bottom: 25px;
+	}
+	.calc-info-left .more{
+		font-size: 15px;
+	}
+	.calc-info-steps .steps-item:first-child::before{
+		background-size: 45% 100%;
+	}
+	.calc-info-steps .steps-item:nth-child(2)::before{
+		background-size: 45% 100%;
+    left: 125px;
+	}
+	.prichiny-vybrat-nas-text h2 {
+    font-size: 42px;
+    line-height: 43px;
+		margin-bottom: 15px;
+}
+.prichiny-vybrat-nas-wrap {
+	padding: 64px 0 45px 54px;
+}
+.prichiny-vybrat-nas-list ul li {
+	max-width: 462px;
+	font-size: 17px;
+}
+.prichiny-vybrat-nas-list {
+	margin-bottom: 40px;
+}
+
+.prichiny-vybrat-nas-right {
+    top: -90px;
+}
+.napishite-nam-left h2 {
+	font-size: 50px;
+	margin-bottom: 24px;
+}
+}
+@media (max-width: 992px){
+	.table-row{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.calc-info-left, .how-it-work-right {
+    display: none;
+}
+.calc-info-wrapper, .how-it-work-wrap{
+	justify-content: center;
+}
+.rabotaem-nad-heiding h2:first-child,
+.prichiny-vybrat-nas-text h2:first-child{
+	display: none;
+}
+.rabotaem-nad-heiding .for-mobile{
+	display: block;
+	text-align: center;
+	}
+	.table-row .table-items {
+		border: none;
+}
+.prichiny-vybrat-nas {
+	top: -100px;
+}
+.prichiny-vybrat-nas-right{
+	width: 350px;
+	height: 340px;
+}
+.prichiny-vybrat-nas-img{
+	width: 80%;
+	height: 100%;
+	object-fit: cover;
+	margin-left: auto;
+	background-size: contain;
+	}
+.prichiny-vybrat-nas-text-mobile{
+	display: block;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 105px;
+	line-height: 126px;
+	text-align: left;
+	color: #040827;
+}
+.prichiny-vybrat-nas-text h3{
+	display: block;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 43px;
+	color: #040827;
+}
+.chasto-zadavaemye-voprosy-wrap h2 {
+	font-size: 36px;
+	margin-bottom: 11px;
+}
+.napishite-nam-wrap{
+	padding: 55px 0;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.napishite-nam-right {
+	width: 100%;
+}
+.napishite-nam-left h2 {
+	font-size: 36px;
+	margin-bottom: 12px;
+}
+.footer-wrap{
+	flex-direction: column;
+}
+.footer-right ul{
+	flex-wrap: wrap;
+}
 }
