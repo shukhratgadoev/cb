@@ -16,6 +16,8 @@ for (i = 0; i < acc.length; i++) {
 function calcInit() {
 	let obshchaya_summa_sliderField1 = document.getElementById('obshchaya-summa-kredita-rangeField-1'),
 		obshchaya_summa_rangeField1 = document.getElementById('obshchaya-summa-kredita');
+	let pervonachalnyj_vznos_sliderField2 = document.getElementById('pervonachalnyj-vznos-rangeField-2'),
+		pervonachalnyj_vznos_rangeField2 = document.getElementById('pervonachalnyj-vznos');
 
 
 	console.log(obshchaya_summa_sliderField1)
@@ -47,6 +49,32 @@ function calcInit() {
 
 	});
 
+	noUiSlider.create(pervonachalnyj_vznos_sliderField2, {
+		connect: [true, false],
+		start: [1000000],
+		step: 1000000,
+		range: {
+			'min': [1000000],
+			'max': [250000000]
+		},
+		format: wNumb({
+			decimals: 0,
+			thousand: ' ',
+		})
+	});
+
+	pervonachalnyj_vznos_sliderField2.noUiSlider.on('update', function (values, handle) {
+		if (values[handle] == false) {} else {
+			pervonachalnyj_vznos_rangeField2.value = values[handle];
+		}
+	});
+
+	pervonachalnyj_vznos_sliderField2.noUiSlider.on('change', function (values, handle) {});
+
+	pervonachalnyj_vznos_rangeField2.addEventListener('change', function () {
+		pervonachalnyj_vznos_rangeField2.noUiSlider.set(this.value);
+
+	});
 }
 
 // смена языка - хедер

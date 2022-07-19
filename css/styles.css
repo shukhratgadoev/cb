@@ -580,6 +580,11 @@ section {
 	outline: none;
 }
 
+.obshchaya-summa-kredita{
+	position: relative;
+	margin-bottom: 34rem;
+}
+
 .obshchaya-summa-kredita label {
 	font-style: normal;
 	font-size: 20rem;
@@ -601,7 +606,6 @@ section {
 	font-size: 20rem;
 	padding: 0 17rem 0 14rem;
 	outline: none;
-	margin-bottom: 34rem;
 }
 
 .cel-kredita-item {
@@ -2546,27 +2550,25 @@ footer {
 	height: 2;
 }
 
-.noUi-horizontal .noUi-handle {
-	border-radius: 50%;
-	background-color: #EBC048;
-	width: 16rem;
-	height: 16rem;
-	right: -16rem;
-	top: -14rem;
-	cursor: pointer;
-}
-
 .noUi-target {
 	background: #e5e5ed;
 }
-
-.noUi-handle {
-	background: url(../img/Rectangle23.png) no-repeat center center;
-	background-size: cover;
-	transition: transform 250ms ease 0s;
-	border: none;
+.noUi-horizontal .noUi-handle{
+	width: 20px!important;
+	height: 20px!important;
+	right: -17px!important;
+	top: -8px!important;
+	cursor: pointer!important;
+	border-radius: 50%;
 }
-
+.noUi-handle{
+	background: url(../img/svg/round.svg) no-repeat center center!important;
+  background-size: cover!important;
+  transition: transform 250ms ease 0s!important;
+}
+.noUi-handle:before, .noUi-handle:after{
+	display: none!important;
+}
 .noUi-touch-area {
 	height: 100%;
 	width: 100%;
@@ -2589,3 +2591,16 @@ footer {
 	transform-origin: 0 0;
 	transform-style: flat;
 }
+
+.obshchaya-summa-kredita-rangeField-1{
+	height: 4px;
+}
+.noUi-horizontal {
+	height: 4px!important;
+	background-color: rgba(199, 196, 196, 1)!important;
+	border: none!important;
+}
+.noUi-connect{
+	background-color: rgba(36, 76, 203, 1)!important;
+}
+
