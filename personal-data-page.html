@@ -1,168 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Личные данные</title>
-		<link rel="stylesheet" href="css/styles.css" />
-	</head>
-	<body>
-		<div class="personal-data">
-			<div class="personal-data-wrapper">
-				<div class="second-container">
-					<div class="p-d-head">
-						<ul>
-							<li><a href="/" class="primary-topbar__link active"><img src="./img/svg/logo.svg" alt="logo"></a></li>
-							<li>
-								<div class="language">
-									<div class="language-wrap">
-										<select name="cars" id="cars">
-											<option value="ru">Rus</option>
-											<option value="uz">Uz</option>
-											<option value="eng">Eng</option>
-										</select>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="steps-line">
-						<ul>
-							<li>
-								<div class="steps-line-img">
-									<div class="steps-line-img-inner"></div>
-								</div>
-								Информация о кредите
-							</li>
-							<li><img src="img/svg/Line002.svg" alt="" /></li>
-							<li class="active">
-								<div class="steps-line-img">
-									<h3 class="active-class">2</h3>
-								</div>
-								Личные данные
-							</li>
-							<li><img src="img/svg/Line002.svg" alt="" /></li>
-							<li>
-								<div class="steps-line-img">
-									<h3>3</h3>
-								</div>
-								Результаты
-							</li>
-						</ul>
-					</div>
 
-					<section class="form-block">
-						<div class="heiding">Личные данные</div>
-						<form action="">
-							<div class="form-name">
-								<label for="form-name">Имя Фамилия Отчество</label>
-								<input type="text" name="form-name" id="form-name" />
-							</div>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Личные данные</title>
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
 
-							<div class="form-second">
-								<div class="date-birth-wrap">
-									<label for="date-birth">Дата рождения</label>
-									<input type="text" name="date-birth" id="date-birth" />
-								</div>
-								<div class="area-residence-wrap">
-									<label for="area-residence">Область проживания</label>
-									<select name="area-residence" id="area-residence">
-										<option value="tashkent"></option>
-										<option value="karakalpakstan">
-											Республика Каракалпакстан
-										</option>
-										<option value="andijan">Андижанская область</option>
-										<option value="bukhara">Бухарская область</option>
-										<option value="jizzakh">Джизакская область</option>
-										<option value="kashkadarya">Кашкадарьинская область</option>
-										<option value="navoi">Навоийская область</option>
-										<option value="namangan">Наманганская область</option>
-										<option value="samarkand">Самаркандская область</option>
-										<option value="surkhandarya">
-											Сурхандарьинская область
-										</option>
-										<option value="syrdarya">Сырдарьинская область</option>
-										<option value="tashkent-region">Ташкентская область</option>
-										<option value="fergana">Ферганская область</option>
-										<option value="khorezm">Хорезмская область</option>
-									</select>
-								</div>
+<body>
+	<div class="personal-data">
+		<div class="personal-data-wrapper">
+			<div class="second-container">
+				<div class="p-d-head">
+					<ul>
+						<li><a href="/" class="primary-topbar__link active"><img src="./img/svg/logo.svg" alt="logo"></a></li>
+						<li>
+							<div class="language">
+								<ul class="language__list language__list-finish">
+									<li>
+										<a href="#" class="language__link language__link--ru">Рус</a>
+										<ul>
+											<li>
+												<a href="#" class="language__link language__link--uz">Uz</a>
+											</li>
+											<li>
+												<a href="#" class="language__link language__link--eng">Eng</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
 							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="steps-line">
+					<ul>
+						<li>
+							<div class="steps-line-img">
+								<div class="steps-line-img-inner"></div>
+							</div>
+							Информация о кредите
+						</li>
+						<li><img src="img/svg/Line002.svg" alt="" /></li>
+						<li class="active">
+							<div class="steps-line-img">
+								<h3 class="active-class">2</h3>
+							</div>
+							Личные данные
+						</li>
+						<li><img src="img/svg/Line002.svg" alt="" /></li>
+						<li>
+							<div class="steps-line-img">
+								<h3>3</h3>
+							</div>
+							Результаты
+						</li>
+					</ul>
+				</div>
 
-							<div class="form-third">
-								<h2>Контакты</h2>
-								<div class="contacts">
-									<div class="phone-number-wrap">
-										<label for="phone-number">Номер телефона</label>
-										<input
-											type="text"
-											name="phone-number"
-											id="phone-number"
-											value="+998 (_ _) _ _ _ - _ _ - _ _"
-										/>
-									</div>
-									<div class="email-wrap">
-										<label for="email">Электронная почта</label>
-										<input
-											type="text"
-											name="email"
-											id="email"
-											value="primer@mail.com"
-										/>
-									</div>
-								</div>
-							</div>
+				<section class="form-block">
+					<div class="heiding">Личные данные</div>
+					<form action="">
+						<div class="form-name phone-number-wrap">
+							<label for="form-name">Имя Фамилия Отчество</label>
+							<input type="text" name="form-name" id="form-name" />
+						</div>
 
-							<div class="passport-data">
-								<h2>Паспортные данные</h2>
-								<div class="passport-data-wrap">
-									<label for="passport-data">Серия и номер паспорта</label>
-									<input
-										type="text"
-										name="passport-data"
-										id="passport-data"
-										value="АА 1234567"
-									/>
-									<p>
-										Паспортные данные надежно защищены и не буду переданы
-										третьим лицам
-									</p>
-								</div>
-								<div class="passport-data-bottom">
-									<div class="passport-data-bottom-img">
-										<img src="img/passport.png" alt="" />
-									</div>
-									<div class="passport-data-bottom-input">
-										<label for="PINFL-number">Впишите номер ПИНФЛ</label>
-										<input type="text" name="PINFL-number" id="PINFL-number" />
-										<p>
-											Персональный Идентификационный Номер <br />
-											Физического Лица состоит из 14 цифр и указан в паспорте
-										</p>
-									</div>
-								</div>
+						<div class="form-second">
+							<div class="date-birth-wrap phone-number-wrap">
+								<label for="date-birth">Дата рождения</label>
+								<input type="text" name="date-birth" id="date-birth" />
 							</div>
-						</form>
-					</section>
-
-					<section class="second-footer">
-						<div class="second-footer-wrap">
-							<div class="footer-text">
-								<p>
-									*Отправленная хаявка не обязует Вас брать кредит. <br />
-									Она лишь даст Вам информацию о выгодных предложениях взятия
-									средств
-								</p>
-							</div>
-							<div class="footer-btn">
-								<button>Отправить заявки</button>
+							<div class="area-residence-wrap">
+								<label for="area-residence">Область проживания</label>
+								<select name="area-residence" id="area-residence">
+									<option value="tashkent"></option>
+									<option value="karakalpakstan">
+										Республика Каракалпакстан
+									</option>
+									<option value="andijan">Андижанская область</option>
+									<option value="bukhara">Бухарская область</option>
+									<option value="jizzakh">Джизакская область</option>
+									<option value="kashkadarya">Кашкадарьинская область</option>
+									<option value="navoi">Навоийская область</option>
+									<option value="namangan">Наманганская область</option>
+									<option value="samarkand">Самаркандская область</option>
+									<option value="surkhandarya">
+										Сурхандарьинская область
+									</option>
+									<option value="syrdarya">Сырдарьинская область</option>
+									<option value="tashkent-region">Ташкентская область</option>
+									<option value="fergana">Ферганская область</option>
+									<option value="khorezm">Хорезмская область</option>
+								</select>
 							</div>
 						</div>
-					</section>
-				</div>
+
+						<div class="form-third">
+							<h2>Контакты</h2>
+							<div class="contacts">
+								<div class="phone-number-wrap">
+									<label for="phone-number">Номер телефона</label>
+									<input type="text" name="phone-number" id="phone-number" placeholder="+998 (_ _) _ _ _ - _ _ - _ _" />
+								</div>
+								<div class="email-wrap">
+									<label for="email">Электронная почта</label>
+									<input type="text" name="email" id="email" placeholder="primer@mail.com" />
+								</div>
+							</div>
+						</div>
+
+						<div class="passport-data">
+							<h2>Паспортные данные</h2>
+							<div class="passport-data-wrap">
+								<label for="passport-data">Серия и номер паспорта</label>
+								<input type="text" name="passport-data" id="passport-data" value="АА 1234567" />
+								<p>
+									Паспортные данные надежно защищены и не буду переданы
+									третьим лицам
+								</p>
+							</div>
+							<div class="passport-data-bottom">
+								<div class="passport-data-bottom-img">
+									<img src="img/passport.png" alt="" />
+								</div>
+								<div class="passport-data-bottom-input">
+									<label for="PINFL-number">Впишите номер ПИНФЛ</label>
+									<input type="text" name="PINFL-number" id="PINFL-number" />
+									<p>
+										Персональный Идентификационный Номер <br />
+										Физического Лица состоит из 14 цифр и указан в паспорте
+									</p>
+								</div>
+							</div>
+						</div>
+					</form>
+				</section>
+
+				<section class="second-footer">
+					<div class="second-footer-wrap">
+						<div class="footer-text">
+							<p>
+								*Отправленная хаявка не обязует Вас брать кредит. <br />
+								Она лишь даст Вам информацию о выгодных предложениях взятия
+								средств
+							</p>
+						</div>
+						<div class="footer-btn">
+							<button>Отправить заявки</button>
+						</div>
+					</div>
+				</section>
 			</div>
 		</div>
-		<script src="js/bootstrap.min.js"></script>
-	</body>
+	</div>
+
+	<script src="js/scripts.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+
 </html>
