@@ -2619,3 +2619,11 @@ footer {
 	background-color: rgba(36, 76, 203, 1)!important;
 }
 
+#image-lottie-wrap {
+  width: 500rem;
+  margin: auto;
+}
+
+.form-block—loading{
+	padding-top: 0;
+}
