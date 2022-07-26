@@ -2490,7 +2490,7 @@ footer {
 }
 
 .language__link--ru:after {
-	background-image: url('../img/svg/ru.svg');
+	background-image: url('../img/ru.svg');
 	width: 17rem;
 	height: 12rem;
 }
