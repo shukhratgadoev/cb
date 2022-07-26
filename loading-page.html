@@ -59,9 +59,10 @@
 						</li>
 					</ul>
 				</div>
-
+				
 				<section class="form-block">
 					<div class="bottom-text">
+						<div id="image-lottie-wrap"></div>
 						<h2>Оправшиваем банки и выбираем <br> самых выгодных кредиторов</h2>
 					</div>
 				</section>
@@ -73,6 +74,18 @@
 
 	<script src="js/scripts.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.7/lottie.min.js" integrity="sha512-HDCfX3BneBQMfloBfluMQe6yio+OfXnbKAbI0SnfcZ4YfZL670nc52Aue1bBhgXa+QdWsBdhMVR2hYROljf+Fg==" crossorigin="anonymous"></script>
+	<script>
+		var animation = bodymovin.loadAnimation({
+			 container: document.getElementById('image-lottie-wrap'),
+			 path: 'data2.json',
+			 renderer: 'svg',
+			 loop: true,
+			 autoplay: true,
+			 name: "Loading Animation",
+		});
+		console.log(animation)
+ </script>
 </body>
 
 </html>

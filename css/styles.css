@@ -607,6 +607,19 @@ section {
 	padding: 0 17rem 0 14rem;
 	outline: none;
 }
+.obshchaya-summa-kredita input::after{
+		content: 'сум';
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 50%;
+    right: 8rem;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 24rem;
+    height: 24rem;
+    pointer-events: none;
+}
 
 .cel-kredita-item {
 	margin-right: 43rem;
@@ -2493,7 +2506,9 @@ footer {
 	width: 17rem;
 	height: 12rem;
 }
-
+.noUi-base {
+	width: calc(100% - 16px)!important;
+}
 .language__list ul {
 	display: none;
 	position: absolute;

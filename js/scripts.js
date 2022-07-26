@@ -18,9 +18,14 @@ function calcInit() {
 		obshchaya_summa_rangeField1 = document.getElementById('obshchaya-summa-kredita');
 	let pervonachalnyj_vznos_sliderField2 = document.getElementById('pervonachalnyj-vznos-rangeField-2'),
 		pervonachalnyj_vznos_rangeField2 = document.getElementById('pervonachalnyj-vznos');
+	let summa_zajma_rangeField2 = document.getElementById('summa-zajma');
+		
+	
 
 
-	console.log(obshchaya_summa_sliderField1)
+	
+
+
 
 	noUiSlider.create(obshchaya_summa_sliderField1, {
 		connect: [true, false],
@@ -40,13 +45,24 @@ function calcInit() {
 		if (values[handle] == false) {} else {
 			obshchaya_summa_rangeField1.value = values[handle];
 		}
+		let obshchayaSumma = obshchaya_summa_rangeField1.value.replace(/[^\d]/g, '');
+		let pervonachalnyjVznos = pervonachalnyj_vznos_rangeField2.value.replace(/[^\d]/g, '');
+
+		
+		summa_zajma_rangeField2.value = parseInt(obshchayaSumma) - parseInt(pervonachalnyjVznos);
+
+		
+		
 	});
 
-	obshchaya_summa_sliderField1.noUiSlider.on('change', function (values, handle) {});
+	obshchaya_summa_sliderField1.noUiSlider.on('change', function (values, handle) {
+		
+	});
 
 	obshchaya_summa_rangeField1.addEventListener('change', function () {
 		obshchaya_summa_rangeField1.noUiSlider.set(this.value);
-
+	
+		
 	});
 
 	noUiSlider.create(pervonachalnyj_vznos_sliderField2, {
@@ -67,14 +83,22 @@ function calcInit() {
 		if (values[handle] == false) {} else {
 			pervonachalnyj_vznos_rangeField2.value = values[handle];
 		}
+		let obshchayaSumma = obshchaya_summa_rangeField1.value.replace(/[^\d]/g, '');
+		let pervonachalnyjVznos = pervonachalnyj_vznos_rangeField2.value.replace(/[^\d]/g, '');
+
+		
+		summa_zajma_rangeField2.value = parseInt(obshchayaSumma) - parseInt(pervonachalnyjVznos);
+
 	});
 
 	pervonachalnyj_vznos_sliderField2.noUiSlider.on('change', function (values, handle) {});
 
 	pervonachalnyj_vznos_rangeField2.addEventListener('change', function () {
 		pervonachalnyj_vznos_rangeField2.noUiSlider.set(this.value);
-
+		
 	});
+
+	
 }
 
 // смена языка - хедер
